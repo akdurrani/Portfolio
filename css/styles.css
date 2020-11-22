@@ -5,11 +5,12 @@ html {
 
 body {
     /* background-color: #f5f5f5; */
-    color: #4a4a4a;
+    /* color: #4a4a4a; */
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
-    background-image: url("../img/laptopOnTable.jpg");
+    background-image: url("../img/pinkleaf.jpg");
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: bottom center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -19,38 +20,50 @@ hr {
 }
 
 .intro i {
-    color:  #ffffff;
-    font-size:25px;
-    padding: 5px;
+    /* color:  #ffffff; */
+    color: #000000;
+    /* font-size:30px; */
+    padding: 10px;
 }
 
 .intro i:hover {
-    color: rgb(0, 89, 255);
+    /* color: rgb(0, 89, 255); */
+    color: #ffffff;
     transform: scale(1.3);
 }
 
-footer a:hover {
+footer i {
+    color: #ffffff;
+    /* font-size:40px; */
+    padding-top: 10px;
+}
+
+footer i:hover {
     color: rgb(0, 89, 255);
     transform: scale(1.3);
+}
+footer a:hover {
+    color: rgb(0, 89, 255);
+    /* transform: scale(1.3); */
 }
 
 .container {
     width: 100%;
 }
 
-.nav {
+/* .nav {
     background-color: #000000;
     top: 0;
     left: 0;
     width: 100%;
     padding: 40px 5px;
-}
+} */
 
 
 
-.nav-item{
+/* .nav-item{
     color: #ffffff;
-}
+} */
 
 
   
@@ -59,7 +72,7 @@ footer a:hover {
 /* min-height: 700px; */
 margin-bottom: 30px;
 padding: 20px;
-color: #ffffff;
+/* color: #ffffff; */
 }
 
 .arrow {
@@ -128,59 +141,60 @@ color: #ffffff;
 
 .about {
     margin-bottom: 60px;
-    background-color: #70707086;
+    background-color: #ffffff86;
     margin-top: 25px;
     padding: 30px 55px;
     border-radius: 8px;
-    color: #ffffff;
+    color: #000000;
+    
 }
 
 .about td {
     padding: 5px;
     padding-right: 10px;
 }
-.about i {
+/* .about i {
     color: black;
     font-size: 20px;
 }
 .about i:hover {
     color: rgb(0, 89, 255);
-}
+} */
 
 .about a {
-    color: #ffffffc5;
+    color: #242424c5;
 }
 
 .about a:hover {
-    color: rgb(0, 89, 255);
+    color: #0059ff;
 }
 
 
 
 .experience{
-    background-color: #70707086;
+    background-color: #ffffff86;
     margin-top: 25px;
     padding: 30px 55px;
     margin-bottom: 60px;
     border-radius: 8px;
-    color: #ffffff;
+    color: #000000;
 }
 
-.experience ul li em {
-    font-size: 13px;
+/* .experience ul li em {
+    font-size: 15px;
 }
 
 .experience ul li ul li {
-    font-size: 14px;
-}
+    font-size: 16px;
+} */
 
 .projects{
-    background-color: #70707086;
+    background-color: #ffffff86;
     margin-top: 25px;
     padding: 30px 55px;
     margin-bottom: 60px;
     border-radius: 8px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .projects td {
@@ -191,7 +205,7 @@ color: #ffffff;
 .projects a {
     /* color: #ffffffc5; */
     /* font-size: 18px; */
-    color: #ffffff;
+    color: #000000;
 }
 
 .projects a:hover {
