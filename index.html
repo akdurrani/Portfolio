@@ -7,10 +7,10 @@
       <meta name="description" content="Azmeh Durrani's Website Portfolio">
 
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
       <title>Azmeh Durrani</title>
       <!-- Tab Icon -->
-      <link rel="shortcut icon" href="img/favicon.ico"/>
+      <link rel="icon" href="img/favicon.ico"/>
 
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
@@ -28,8 +28,8 @@
        
     </head>
 
-    
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+   
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#top">
         AD</a>
@@ -41,11 +41,16 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#experience">Experience</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://drive.google.com/file/d/1TEjwvqHJLZaZGlNwZcCcJ6tXIMJCjUBB/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                Resume
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="mailto:akdurrani21@gmail.com">Contact</a>
@@ -61,10 +66,10 @@
     <div class="container-fluid intro">
       <div class="row">
         <div class="col-12 animated fadeInUp text-center">
-
-          <h1>Azmeh Durrani</h1>
           
-          <p>Software Engineer <br> Based in Los Angeles, CA</p> <hr>
+          <h1 id="name">Azmeh Durrani</h1>
+          
+          <h5>Software Engineer <br> Based in Los Angeles, CA</h5> <hr>
           <a href="https://github.com/akdurrani"><i class="fab fa-github fa-2x"></i></a>
           <a href="https://www.linkedin.com/in/azmeh-durrani/"><i class="fab fa-linkedin fa-2x"></i></a>
           <a href="mailto:akdurrani21@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
@@ -73,7 +78,7 @@
       <div class="row">
         <div class="col-12 arrow animated heartBeat infinite">
           <a href="#about">
-            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-down fa-lg"></i>
           </a>
         </div>
       </div>
@@ -84,12 +89,13 @@
         </div>
       </div>
     </div>
+    
   
-  <div class="container about wow slideInUp" id="about">
+  <div class="container about" id="about">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 animated wow slideInUp">
         <!-- <div class="section about"> -->
-          <h2>About Me</h2><hr>
+          <h1 class="sectionTitle">About Me</h1><hr>
           <p>Hi, my name is Azmeh Durrani and I'm an aspiring software engineer graduating this year from UCI. <br><br>
             <!-- My aim as a software engineer is to create programs or products that provide efficient solutions 
             through engaging and intuitive experiences. <br> -->
@@ -130,15 +136,16 @@
       </div>
     </div>
   </div>
-  <div class="container experience wow slideInUp" id="experience">
-    <div class="row">
+  
+  <!-- <div class="container experience" id="experience">
+    <div class="row no-gutters">
       <div class="col-12">
-        <div class="section">
-          <h2>Experience</h2>
+        <div class="section animated wow slideInUp">
+          <h1 class="sectionTitle">Experience</h1>
           <hr>
           <ul>
             <li>
-              Application Developer at Baskette <br> <em>April 2020 - June 2020</em>
+              Front End Developer at Baskette <br> <em>April 2020 - June 2020</em>
               <ul>
                 <li>Worked in a team of four students from UCI to design and implement an app in React Native for a startup called Baskette.</li>
                 <li>Designed UX for Baskette App where users can search for restaurants based on diet restrictions and dishes they like.</li>
@@ -167,55 +174,135 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="container projects wow slideInUp" id="projects">
-    <div class="row">
+  <div class = "container projects" id="projects">
+
+    <div class="row sectionTitle">
       <div class="col-12">
-        <div class="section">
-          <h2>Projects</h2>
-          <hr>
-          <table>
-            <tbody>
-            <tr>
-            <td><em>Baskette App</em></td>
-            <td>App created in React Native to search for restaurants based on dietary restrictions.
-              Completed a user onboarding process of signing up and logging in, and implementing filters through 
-              the SinglePlatform API for showing results of food dishes and restaurants to users 
-              based on their preferences.</td>
-            </tr>
-            <tr>
-            <td><em>LineBuster App</em></td>
-            <td>Senior Design Project. <br>App created in React Native at Paciolan for ticket 
-              operators in the field of an event to help them be 
-              efficient in dealing with long lines and forgotten customer tickets.</td>
-            </tr>
-            <tr>
-            <td><a href="https://akdurrani.github.io/Valiant/"><em>Valian Website</em>t</a></td>
-            <td>Designed and built a website to provide information for a proposed VR game to combat phobias in children.</td>
-            </tr>
-            <tr>
-            <td><a href="https://github.com/akdurrani/CarsLand"><em>CarsLand ECommerce Website</em></a></td>
-            <td>Designed and built a fictitious ecommerce website using Java and REST to sell used cars.</td>
-            </tr>
-            <tr>
-            <td><em>Spotify Browser</em></td>
-            <td>Built a webpage with Angular to log in and view your Spotify profile, music tracks and albums.</td>
-            </tr>
-            <tr>
-            <td><em>Sleep Tracking App</em></td>
-            <td>Designed and built a mobile app with Ionic Mobile to log hours of sleep a user gets to keep track of their sleep.</td>
-            </tr>
-            <tr>
-              <td><em>Tipping App</em></td>
-              <td>Designed and built an iOS app in Swift to calculate tip given the total amount and the percent of gratuity. </td>
-            </tr>
-            </tbody>
-            </table>
+        <h1 class="animated wow fadeInLeft">Projects</h1>
+      </div>
+    </div>
 
+    <div class="row projCard">
+      <div class="col-sm-12 col-md-6">
+        <a href="https://www.baskette.co/">
+          <div class="projImg" id="basketteImg">
+              <img class="wow fadeInLeft" src="img/basketteApp.png" alt="Baskette logo">
+              <div class="mask"></div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="projDesc wow fadeInRight">
+          <a href="https://www.baskette.co/">
+            <h2 class="projTitle">Baskette</h2>
+            <p>
+              In a team of five, built an app in React Native to search for restaurants based on dietary restrictions. 
+              <hr>Built with: React Native, Google Firebase, JavaScript.
+
+            </p>
+          </a>
         </div>
       </div>
     </div>
+
+    
+
+    <div class="row projCard">
+      <div class="col-sm-12 col-md-6">
+        <a href="https://github.com/akdurrani/CarsLand">
+          <div class="projImg">
+              <img class="wow fadeInLeft" src="img/carsland.png" alt="CarsLand Homepage">
+              <div class="mask"></div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="projDesc wow fadeInRight">
+          <a href="https://github.com/akdurrani/CarsLand">
+            <h2 class="projTitle">CarsLand</h2>
+            <p>
+              Designed and built a fictitious ecommerce website using Java and REST to sell used cars.
+              <hr>Built with: JavaScript, HTML, CSS, Java, SQL.
+
+
+            </p>
+          </a>
+      </div>
+      </div>
+    </div>
+
+    <div class="row projCard">
+      <div class="col-sm-12 col-md-6">
+        <a href="">
+          <div class="projImg">
+              <img class="wow fadeInLeft" src="img/linebuster.png" alt="LineBuster App Print Landing Page">
+              <div class="mask"></div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="projDesc wow fadeInRight">
+          <a href="">
+            <h2 class="projTitle">LineBuster</h2>
+            <p>
+              In a team of six students, designed and built the second half of an iPad app in React Native at Paciolan 
+              for ticket operators in the field of an event to help them be efficient in dealing with long lines and 
+              forgotten customer tickets.
+              <hr>Built with: React Native, Node.js, JavaScript, CSS.
+
+
+            </p>
+          </a>
+      </div>
+      </div>
+    </div>
+
+    <div class="row projCard">
+      <div class="col-sm-12 col-md-6">
+        <a href="https://akdurrani.github.io/Valiant/">
+          <div class="projImg">
+              <img class="wow fadeInLeft" src="img/valiant.png" alt="Valiant Homepage">
+              <div class="mask"></div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="projDesc wow fadeInRight">
+          <a href="https://akdurrani.github.io/Valiant/">
+            <h2 class="projTitle">Valiant</h2>
+            <p>
+              Designed and built a website to provide information for a proposed VR game to combat phobias.
+              <hr>Built with: HTML, CSS, JavaScript.
+            </p>
+          </a>
+      </div>
+      </div>
+    </div>
+
+    <div class="row projCard">
+      <div class="col-sm-12 col-md-6">
+        <a href="">
+          <div class="projImg">
+              <img class="wow fadeInLeft" src="img/spotifyBrowser.png" alt="Valiant Homepage">
+              <div class="mask"></div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="projDesc wow fadeInRight">
+          <a href="">
+            <h2 class="projTitle">Spotify Browser</h2>
+            <p>
+              Built a webpage using Angular framework for the frontend interface to display data from a user’s Spotify profile. 
+              <hr>Built with: Angular, HTML, CSS, JavaScript, TypeScript.
+            </p>
+          </a>
+      </div>
+      </div>
+    </div>
+
   </div>
 
   <footer class="page-footer font-small bg-dark pt-4">
@@ -283,6 +370,8 @@
       new WOW().init();
     });
   </script>
+
+  <script src="js/scripts.js"></script>
 
 
 </body>

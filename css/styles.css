@@ -4,20 +4,61 @@ html {
 }
 
 body {
-    /* background-color: #f5f5f5; */
+    background-color: #ffc1d8;
     /* color: #4a4a4a; */
     color: #000000;
     font-family: 'Montserrat', sans-serif;
-    background-image: url("../img/pinkleaf.jpg");
-    background-repeat: no-repeat;
+    /* background-image: url("../img/pinkleaf.jpg"); */
+    /* background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 hr {
     visibility: hidden;
 }
+
+/* .navbar {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.navbar-hide {
+    pointer-events: none;
+    opacity: 0;
+} */
+
+.navbar {
+    transition: top 0.5s ease;
+}
+
+.navbar-hide {
+    top: -56px;
+}
+
+#name {
+    font-size: 50px;
+}
+
+.intro {
+    /* background: #ffffff; */
+    background-image: url("../img/pinkleaf.jpg");
+    /* background-image: url("../img/pinkleaf.jpg"), linear-gradient(#ffd4f2, #ffffff); */
+    background-repeat: no-repeat;
+    background: linear-gradient(#ffffff00 75%,  #ffc1d8), url("../img/pinkleaf.jpg") fixed;
+    background-position: bottom center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+/* 
+.introTxt {
+    background:  linear-gradient(#ffffff00, #ffffffbd);
+    background-size: cover; 
+    height: 15vh; 
+    background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)), url("../img/pinkleaf.jpg") no-repeat fixed;
+    background-size: cover;
+} */
 
 .intro i {
     /* color:  #ffffff; */
@@ -131,7 +172,7 @@ padding: 20px;
 @media (min-width: 1400px) {
     .intro {
         padding: 260px 50px 260px;
-        height: 800px;
+        height: 1000px;
         /* margin-bottom: 200px; */
     }
     .arrow {
@@ -141,9 +182,9 @@ padding: 20px;
 
 .about {
     margin-bottom: 60px;
-    background-color: #ffffff86;
-    margin-top: 25px;
-    padding: 30px 55px;
+    background-color: #ffffff80;
+    margin-top: 100px;
+    padding: 60px 55px;
     border-radius: 8px;
     color: #000000;
     
@@ -170,11 +211,11 @@ padding: 20px;
 }
 
 
-
+/*ffc1d880*/
 .experience{
-    background-color: #ffffff86;
+    background-color: #ffffff80;
     margin-top: 25px;
-    padding: 30px 55px;
+    padding: 60px 55px;
     margin-bottom: 60px;
     border-radius: 8px;
     color: #000000;
@@ -189,9 +230,9 @@ padding: 20px;
 } */
 
 .projects{
-    background-color: #ffffff86;
+    background-color: #ffffff80;
     margin-top: 25px;
-    padding: 30px 55px;
+    padding: 60px 55px;
     margin-bottom: 60px;
     border-radius: 8px;
     color: #000000;
@@ -213,9 +254,65 @@ padding: 20px;
 }
 
 
-img {
-height: 180px;
-margin: 25px 0 10px;
-width: 200px;
+.sectionTitle {
+    /* padding: 10px; */
+    padding-bottom: 20px;
+}
 
+.projCard {
+    padding: 25px 0px;
+}
+
+.projImg {
+    height: auto;
+}
+
+img {
+    width: 75%;
+    height: auto;
+    display: block;
+    padding-top: 20px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.mask{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fce3ec80;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.projImg {
+    transition: .5s ease;
+    padding: 10px 0px;
+}
+
+#basketteImg img {
+    width: 27%;
+    /* height: 50%; */
+}
+
+.projCard:hover .mask {
+    width: 0;
+  }
+
+.projCard:hover .projImg {
+    transform: scale(1.05);
+}
+
+.projCard:hover .projDesc a {
+    color: #464646;
+}
+
+.projTitle {
+    padding-top: 55px;
 }
